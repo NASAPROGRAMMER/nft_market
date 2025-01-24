@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackHorseCrypto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.fbcd.co/products/resized/resized-750-500/021-77e3b16000d38f9211cddf19fef434e780aa2675768070a3256b8309503c4df8.jpg" type="image/x-icon"/>
+</head>
+<body>
+    <header>
+        <div class="logo">/BlackHorseCrypto</div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><button class="connect-btn">Connect Wallet</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>New funny human every day, till 1000th day.</h1>
+            <p>Pupee is a collection of 1000 funny new NFTs - unique digital collectibles living on the Ethereum blockchain.</p>
+            <button class="see-opensea">See on Opensea</button>
+        </div>
+        <div class="images">
+            <img src="image1.png" alt="NFT 1">
+            <img src="image2.png" alt="NFT 2">
+            <img src="image3.png" alt="NFT 3">
+            <img src="image4.png" alt="NFT 4">
+        </div>
+    </main>
+
+    <section class="latest-apes">
+        <h2>Our Latest NFTs</h2>
+        <div class="ape-grid">
+            <div class="ape-card" onclick="showPopup('Omar Dipper', '2 ETH')">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/63ae58148721553.62fb400544047.png" alt="Omar Dipper">
+                <h3>Omar Dipper</h3>
+                <p>0.8/100 NFTs</p>
+                <p class="price">2 ETH</p>
+            </div>
+            <div class="ape-card" onclick="showPopup('Cujo', '1.6 ETH')">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/16a350148721553.62fb40054502a.png" alt="Cujo">
+                <h3>Cujo</h3>
+                <p>4/100 NFTs</p>
+                <p class="price">1.6 ETH</p>
+            </div>
+            <div class="ape-card" onclick="showPopup('Dragstone Cowboy', '2 ETH')">
+                <img src="https://pbs.twimg.com/media/FI7T_LqXsAIX8ls.jpg" alt="Dragstone Cowboy">
+                <h3>Dragstone Cowboy</h3>
+                <p>76/100 NFTs</p>
+                <p class="price">2 ETH</p>
+            </div>
+            <div class="ape-card" onclick="showPopup('Keystone', '1.9 ETH')">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/82efcf148721553.62fb400542099.png" alt="Keystone">
+                <h3>Keystone</h3>
+                <p>9/100 NFTs</p>
+                <p class="price">1.9 ETH</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup()">×</span>
+            <h3 id="popup-title">Item Name</h3>
+            <p id="popup-price">Price</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <section class="information-section">
+        <h2>Stay informed & inspired wherever you are</h2>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+          Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.
+        </p>
+        <div class="info-cards">
+          <div class="info-card">
+            <h3>Design Things Fast</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia consequat duis enim velit mollit.
+            </p>
+            <div class="info-images">
+              <img src="image1.png" alt="High resolutions">
+              <img src="image2.png" alt="Eat Fresh">
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Grow Your Audience</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia consequat duis enim velit mollit.
+            </p>
+            <div class="info-images">
+              <img src="https://zoomstudio.com.au/wp-content/uploads/Model-under-colourful-lights-model-profile-6.jpg" alt="Avatar 1">
+              <img src="https://img.freepik.com/premium-photo/man-fashion-portrait-abstract-colorful-background-male-model-looking-camera-neon-colored-lighting-created-with-generative-ai_77190-14787.jpg" alt="Avatar 2">
+              <img src="https://th.bing.com/th/id/OIP.1D7CocVMZtDjZIbGDbRLUwHaF7?rs=1&pid=ImgDetMain" alt="Avatar 3">
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Support All Devices</h3>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia consequat duis enim velit mollit.
+            </p>
+            <div class="info-images">
+              <img src="https://media.istockphoto.com/id/1306235544/vector/hand-phone-icon-vector-design-template.jpg?s=170667a&w=0&k=20&c=E0ubHZcVObn0OYeTWvzqVEXZEGsqHo_S7OOS_SUHa_g=" alt="Device Image">
+              <img src="https://cdn3.iconfinder.com/data/icons/superpack/Icons/Original%20Size/Macbook.png" alt ="Device Image3">
+              <img src="https://static.vecteezy.com/system/resources/previews/006/900/746/non_2x/tablet-screen-icon-tablet-mockup-free-vector.jpg" alt="Device Image2">
+            </div>
+
+          </div>
+        </div>
+      </section>
+      
+      <section class="dashboard-stats">
+        <div class="stat-card">
+          <h3>Active Users</h3>
+          <p class="stat-number">43,000 <span class="stat-change positive">▲ 18%</span></p>
+          <p class="stat-subtitle">Last 7 Days</p>
+        </div>
+        <div class="stat-card">
+          <h3>Coin Marketcap</h3>
+          <p class="stat-number">$1,284M <span class="stat-change negative">▼ 5%</span></p>
+          <p class="stat-subtitle">Last 7 Days</p>
+        </div>
+        <div class="stat-card">
+          <h3>Supply Token</h3>
+          <p class="stat-number">26,839M <span class="stat-change positive">▲ 6%</span></p>
+          <p class="stat-subtitle">Last 30 Days</p>
+        </div>
+        <div class="stat-card">
+          <h3>Total Burn Token</h3>
+          <p class="stat-number">3,20M <span class="stat-change positive">▲ 11%</span></p>
+          <p class="stat-subtitle">Last 7 Days</p>
+        </div>
+        <div class="stat-card">
+          <h3>Price Increase after ICO</h3>
+          <p class="stat-number">10,800% <span class="stat-change positive">▲ 8%</span></p>
+          <p class="stat-subtitle">All Time</p>
+        </div>
+      </section>
+      
+      <section class="tool-integration">
+        <h2>Connect with all necessary tools</h2>
+        <p class="subtext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+        </p>
+        <div class="tool-grid">
+          <div class="tool-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/022/101/098/large_2x/spotify-logo-transparent-free-png.png" alt="Spotify" />
+          </div>
+          <div class="tool-card">
+            <img src="https://www.pngarts.com/files/7/Zoom-Logo-PNG-Transparent-Image.png" alt="Zoom" />
+          </div>
+          <div class="tool-card">
+            <img src="https://toppng.com/uploads/thumbnail/slack-logo-11609376824bwffi3unc9.png" alt="Slack" />
+          </div>
+          <div class="tool-card">
+            <img src="https://logos-world.net/wp-content/uploads/2021/11/Hotjar-Logo-700x394.png" alt="Hotjar" />
+          </div>
+          <div class="tool-card">
+            <img src="https://logos-download.com/wp-content/uploads/2016/09/HubSpot_logo-700x204.png" alt="HubSpot" />
+          </div>
+          <div class="tool-card">
+            <img src="https://www.insightpartners.com/wp-content/uploads/2018/02/shopify.png" alt="Shopify" />
+          </div>
+          <div class="tool-card">
+            <img src="https://th.bing.com/th/id/R.30e3acca08d08955e723c12ef1eef63c?rik=ed%2bXQ4WvggEwPA&riu=http%3a%2f%2fclipart-library.com%2fimage_gallery2%2fWhatsApp-PNG-Image.png&ehk=lxNb99%2b0HY2t4UH7mSUk5HA%2fnvQmm2O6Bberw73QQH4%3d&risl=&pid=ImgRaw&r=0" alt="WhatsApp" />
+          </div>
+          <div class="tool-card">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/zalando-282430.png" alt="Zalando" />
+          </div>
+          <div class="tool-card">
+            <img src="https://www.pngmart.com/files/23/Meta-Logo-PNG-File.png" alt="Meta" />
+          </div>
+          <div class="tool-card">
+            <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/kaspersky-lab-1-logo.png" alt="Kaspersky" />
+          </div>
+          <div class="tool-card">
+            <img src="https://1.bp.blogspot.com/-hSkUNxL_YF0/YHv0PnJe-kI/AAAAAAAAEwI/oTNYIX7Z-ZUoJGGDtMl5OrXgKNmTohxlQCLcBGAsYHQ/w1200-h630-p-k-no-nu/Logo%2BZArchiver%2BFormat%2BPNG.png" alt="Zarchiver" />
+          </div>
+          <div class="tool-card">
+            <img src="https://seeklogo.com/images/R/redhat-logo-5694C9B264-seeklogo.com.png" alt="Redhat" />
+          </div>
+          <div class="tool-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/022/100/729/original/tesla-logo-transparent-free-png.png" alt="Tesla" />
+          </div>
+          <div class="tool-card">
+            <img src="https://freelogopng.com/images/all_img/1691991197tokopedia-logo-transparent.png" alt="Tokopedia" />
+          </div>
+        </div>  
+      </section>
+      
+      <section class="contact-section">
+        <h2>Contact us</h2>
+        <p class="contact-subtext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img src="https://www.sponsoredtours.com/wp-content/uploads/2021/07/Blue-Email-Icon-480x480.png" alt="Email Icon" />
+            </div>
+            <h3>Email Address</h3>
+            <p>support@domainname.com</p>
+            <p>contact@domainname.com</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/9298/9298511.png" alt="Phone Icon" />
+            </div>
+            <h3>Call Us</h3>
+            <p>+1 234-888-1234</p>
+            <p>+1 567-888-5678</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-coloricon-2/21/129-512.png" alt="Location Icon" />
+            </div>
+            <h3>United States - HQ</h3>
+            <p>2132 Thornton St. Glenside,</p>
+            <p>Connecticut 06084</p>
+          </div>
+        </div>
+      </section>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>

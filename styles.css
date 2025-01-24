@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(to bottom right, #1b1b1f, #23262a);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.connect-btn {
+    background-color: #3e82fc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.connect-btn:hover {
+    background-color: #336ad0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.see-opensea {
+    background-color: #00a86b;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.see-opensea:hover {
+    background-color: #008655;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 20px;
+}
+
+.images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: #ccc;
+}
+
+.latest-apes {
+    padding: 40px;
+}
+
+.latest-apes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ape-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.ape-card {
+    background: #292c33;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ape-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.ape-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.ape-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.ape-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.ape-card .price {
+    color: #00a86b;
+    font-weight: bold;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background: #1b1b1f;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    width: 90%;
+}
+
+.popup-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+.popup-content button {
+    background-color: #3e82fc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-content button:hover {
+    background-color: #336ad0;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.information-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #121212; /* Sesuai dengan warna tema */
+}
+
+.information-section h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.information-section p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background-color: #1b1b1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info-card h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+.info-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-images img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 20px;
+    background-color: #1b1b1f; /* Menyesuaikan warna tema sebelumnya */
+    border-radius: 10px;
+}
+
+.stat-card {
+    background-color: #23262a;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.stat-card h3 {
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.stat-subtitle {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.stat-change {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.stat-change.positive {
+    color: #00a86b; /* Hijau untuk kenaikan */
+}
+
+.stat-change.negative {
+    color: #fc3e3e; /* Merah untuk penurunan */
+}
+.tool-integration {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1b1b1f; /* Sesuai tema sebelumnya */
+    color: white;
+}
+
+.tool-integration h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tool-integration .subtext {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 40px;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.tool-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.tool-card img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.view-all-link {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #3e82fc;
+    text-decoration: none;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1b1b1f; /* Warna tema yang sama */
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-section .contact-subtext {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-card {
+    background-color: #23262a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.contact-icon {
+    margin-bottom: 10px;
+}
+
+.contact-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #3e82fc;
+}
+
+.contact-card p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 5px 0;
+}
